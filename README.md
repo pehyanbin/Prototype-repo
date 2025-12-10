@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SecureVault - Privacy-Preserving Digital Identity System
 
-## Getting Started
+A decentralized identity vault built with Next.js, featuring blockchain technology, ECDSA cryptography, and Zero-Knowledge Proofs.
 
-First, run the development server:
+## Ì∫Ä Quick Start
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`bash
+# Install dependencies
+bun install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Run development server
+bun run dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Open http://localhost:3000
+\`\`\`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ‚ú® Features
 
-## Learn More
+- **Blockchain Storage**: Each credential = one block with proof-of-work
+- **ECDSA Signatures**: Cryptographic signing and verification
+- **Zero-Knowledge Proofs**: Prove age without revealing it
+- **Tamper Detection**: Instant detection of modifications
+- **Smart Contract**: Deploy to Ethereum testnet
 
-To learn more about Next.js, take a look at the following resources:
+## Ì¥ê How It Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Generate ECDSA key pair
+2. Add credentials (hashed + signed)
+3. Store in blockchain with PoW
+4. Verify with signatures
+5. Revoke granularly
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Ì≥¶ Tech Stack
 
-## Deploy on Vercel
+- Next.js 16 + React 19
+- Tailwind CSS + Framer Motion
+- Web Crypto API
+- Solidity Smart Contracts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built for GODAM Lah! 2.0 Security Track
